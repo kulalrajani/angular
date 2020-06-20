@@ -8,6 +8,7 @@ import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -57,6 +58,7 @@ import { baseURL } from './shared/baseurl';
     MatToolbarModule,
     FlexLayoutModule,
     HttpClientModule,
+    HttpModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,
