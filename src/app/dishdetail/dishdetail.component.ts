@@ -81,9 +81,9 @@ export class DishdetailComponent implements OnInit {
 
   createForm() : void {
     this.commentForm = this.fb.group({
-      comment: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)] ],
+      author: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)] ],
       rating:[5, Validators.required],
-      author: ['', Validators.required ]
+      comment: ['', Validators.required ]
     });
     this.commentForm.valueChanges
       .subscribe(data => this.onValueChanged(data));
